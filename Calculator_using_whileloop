@@ -18,7 +18,7 @@ while True:
     else:
         res=input(print("Operator not recognised. Please try again "))
 
-    response=input("Do you want to continue?(y/n)")
+    response=input("Do you want to continue?(y/n): ")
     if response=="Y" or response=="y":
             continue
     else:
