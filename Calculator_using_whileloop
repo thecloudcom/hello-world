@@ -12,9 +12,12 @@ while True:
     elif cust_operator=="*":
         print(f"{val1}*{val2}=",val1*val2)
     elif cust_operator=="/":
-        if val1 or val2 ==0:
+        if val2 ==0:
             print("You cannot divide by zero")
-            print(f"{val1}//{val2}=",val1/val2)
+            continue
+        else:
+            if val2 != 0:
+                print(f"{val1}/{val2}=",val1/val2)
     else:
         res=input(print("Operator not recognised. Please try again "))
 
@@ -23,4 +26,5 @@ while True:
             continue
     else:
         if response=="N" or response=="n":
+            print("Thank you for using this program")
             break
